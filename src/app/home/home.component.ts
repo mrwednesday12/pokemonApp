@@ -9,13 +9,14 @@ import { pokemon } from '../shared/models/pokemon.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  
   pokemon$: Observable<pokemon[]>;
   constructor(private pokeservice:PokeService){
 
   }
   ngOnInit(){
     this.pokemon$ = this.pokeservice.getPokemons()
+    console.log(this.pokemon$);
   }
 
 }
