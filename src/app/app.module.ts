@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FavieComponent } from './favie/favie.component';
 import { ContactComponent } from './contact/contact.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const​ routes​:​ ​Routes​ ​=​ [{ path: ​''​, redirectTo: ​'home'​, pathMatch: ​'full'​},   { path: ​'home'​, component: HomeComponent },   { path: ​'favie'​, component: FavieComponent},   { path: ​'contact'​, component: ContactComponent}   ]; 
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
