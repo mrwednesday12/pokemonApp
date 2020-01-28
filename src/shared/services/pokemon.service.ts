@@ -6,10 +6,11 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 // Observable shit hé
 import { tap, map } from "rxjs/operators";
 import { Observable } from "rxjs";
+import { PokemonDetails } from '../model/pokemonDetails';
 @Injectable()
 export class PokemonService {
   urllocal = "http://localhost:3000/faviePokemon";
-  url = "https://pokeapi.co/api/v2/pokemon";
+  url = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=200";
   constructor(private http: HttpClient) { }
 
   getPokemon(): Observable<Pokemon[]> {
@@ -30,5 +31,10 @@ export class PokemonService {
   addFavieJSON(value): Observable<any> {
     const headers = new HttpHeaders().set("Content-type", "application/json");
     return this.http.post(this.urllocal, value, { headers: headers });
+  }
+
+  getDetails(url): Observable<PokemonDetails[]> {
+    return this.http
+      .get<PokemonDetails[]>(url);
   }
 }

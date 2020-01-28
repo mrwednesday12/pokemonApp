@@ -1,6 +1,15 @@
-<h3>My favies</h3>
-<ul class="list-group">
-    <li class="pokemon list-group-item" *ngFor="let pokemon of pokemon$ | async">
-        {{pokemon.id}} {{pokemon.name}}
-    </li>
-</ul>
+<h3 id="titleFav" style="margin-top: 50px; text-align: center;">Your collection</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <ul class="list-group">
+                <li class="pokemon list-group-item" (click)="getDetails(pokemon.url);" *ngFor="let pokemon of pokemon$ | async">
+                    {{pokemon.id}} {{pokemon.name}} {{pokemon.url}}
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+

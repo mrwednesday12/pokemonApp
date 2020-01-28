@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   addFavieDetail(faviedetails) {
     // id === null, omdat deze auto wordt ingevuld door de json server
     console.log(faviedetails);
-    const newPokiesJSON = new Pokemon(null, faviedetails.name, faviedetails.type);
+    const newPokiesJSON = new Pokemon(null, faviedetails.name, faviedetails.type, faviedetails.url);
     this.pokemonService.addFavieJSON(newPokiesJSON)
       .subscribe((addedPokemon) => {
         // pokemons opnieuw ophalen in de subscription

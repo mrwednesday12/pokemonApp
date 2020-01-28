@@ -1,5 +1,9 @@
 .pokemon{
-    background-color: #FFCB05;
-    color: black;
+    background-color: #3466AF;
+    color: #FFCB05;
     text-align: center;
+    font-family: Sigmar One, Cursive;
+}
+#pokemon:hover{
+    opacity: 90%;
 }

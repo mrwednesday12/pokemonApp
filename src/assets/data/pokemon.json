@@ -1,12 +1,19 @@
 {
   "faviePokemon": [
     {
-      "name": "bulbasaur",
+      "name": "squirtle",
+      "url": "https://pokeapi.co/api/v2/pokemon/7/",
       "id": 1
     },
     {
-      "name": "bulbasaur",
+      "name": "ivysaur",
+      "url": "https://pokeapi.co/api/v2/pokemon/2/",
       "id": 2
+    },
+    {
+      "name": "butterfree",
+      "url": "https://pokeapi.co/api/v2/pokemon/12/",
+      "id": 3
     }
   ]
 }

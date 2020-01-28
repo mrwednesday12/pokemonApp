@@ -1,8 +1,7 @@
 <!-- app.component.html -->
 <div class="container">
-  <!-- statisch hoofdmenu -->
   <div class="row">
-    <div class="col-md">
+    <div id="background" class="col-md">
       <nav class="navbar navbar-expand-lg">
         <img class="img-fluid" style="scale: 50%;" style="width: 20%;" src="../assets/data/pokemon.png">
         <button class="navbar-toggler" style="background-color: #393939;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,21 +9,32 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a routerLink="home" class="nav-item nav-link">home</a>
-            <a routerLink="favie" class="nav-item nav-link">favie</a>
-            <a routerLink="contact" class="nav-item nav-link">contact</a>
+            <a routerLink="home" style="font-size: 28px; font-family: 'Sigmar One', cursive;" class="nav-item nav-link">Home</a>
+            <a routerLink="favie" style="font-size: 28px; font-family: 'Sigmar One', cursive;" class="nav-item nav-link">Favie</a>
+            <a routerLink="contact" style="font-size: 28px; font-family: 'Sigmar One', cursive;" class="nav-item nav-link">Contact</a>
            </div>
         </div>
       </nav>
     </div>
   </div>
 
+    <div class="row">
+      <div class="col-md">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-md">
+        <img style="margin-top: 90px;" src="../assets/data/pokemon long.jpg" class="img-fluid">
+      </div>
+    </div>
+    
+    
+
   
 
 
 
   <!-- router outlet! hier worden alle routes/componenten geprojecteerd -->
-  <router-outlet></router-outlet>
+ 
   <!-- footer-->
   <hr>
   <div class="text-center">Copyright Massimo inc. &copy; 2019</div>

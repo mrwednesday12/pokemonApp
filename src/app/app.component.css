@@ -1,20 +1,24 @@
 a{
-    color: black;
+    color: #FFCB05;
 }
 .collapse{
     background-color: #393939;
-    color: snow;
+    color:#FFCB05;
 }
 .nav-item{
     background-color: #393939;
-    color: snow;
+    color:#FFCB05;
 }
 .navbar-nav{
     background-color: #393939;
 }
 .navbar{
     background-color: #393939;
+    color: #FFCB05;
 }
 .navbar-toggler-icon{
     background-color: #393939;
+}
+.background{
+    background-image: url("../assets/data/pokemon.jpg");
 }

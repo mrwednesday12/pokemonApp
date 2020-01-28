@@ -1,7 +1,12 @@
 li{
-    color: black;
+    color: #FFCB05;
+    font-family: Sigmar One, Cursive;
 }
 .pokemon{
-    background-color: #f65241;
+    background-color: #FFCB05;
     color: #3466AF;
+}
+#titleFav{
+    color: #FFCB05;
+    font-family: Sigmar One, cursive;
 }
