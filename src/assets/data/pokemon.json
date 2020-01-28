@@ -1,26 +1,12 @@
 {
   "faviePokemon": [
     {
-      "id": 1,
-      "name": "Charmander",
-      "type": "Fire"
+      "name": "bulbasaur",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Bulbasaur",
-      "type": "Plant"
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
+      "name": "bulbasaur",
+      "id": 2
     }
   ]
 }

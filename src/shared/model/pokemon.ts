@@ -1,6 +1,6 @@
 export class Pokemon {
     constructor (
-   id:void,
+    id:void,
     public name: string,
     public type: string
     ) {}

@@ -1,4 +1,16 @@
 <h3>Welcome pokemon trainers! Choose your pets</h3>
-<li *ngFor="let pokemon of pokemon$ | async" (click)="addFavie(pokemon)">
-    {{pokemon.id}} {{pokemon.name}}
-</li>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="pokemon list-group-item" *ngFor="let pokemon of pokemon$ | async" (click)="addFavieDetail(pokemon)">
+                    {{pokemon.id}} {{pokemon.name}}
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="../home/pictures/pokemon.jpg">
+        </div>
+    </div>
+</div>
+

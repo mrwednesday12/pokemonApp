@@ -1,21 +1,25 @@
 <!-- app.component.html -->
 <div class="container">
-  <h1>PokemonFav</h1>
   <!-- statisch hoofdmenu -->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Favie pokémon selector</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a routerLink="home" class="nav-item nav-link">home</a>
-        <a routerLink="favie" class="nav-item nav-link">favie</a>
-        <a routerLink="contact" class="nav-item nav-link">contact</a>
-       </div>
+  <div class="row">
+    <div class="col-md">
+      <nav class="navbar navbar-expand-lg">
+        <img class="img-fluid" style="scale: 50%;" style="width: 20%;" src="../assets/data/pokemon.png">
+        <button class="navbar-toggler" style="background-color: #393939;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a routerLink="home" class="nav-item nav-link">home</a>
+            <a routerLink="favie" class="nav-item nav-link">favie</a>
+            <a routerLink="contact" class="nav-item nav-link">contact</a>
+           </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </div>
+
+  
 
 
 
