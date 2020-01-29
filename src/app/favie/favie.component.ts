@@ -9,6 +9,7 @@ import { PokemonDetails } from 'src/shared/model/pokemonDetails';
   templateUrl: './favie.component.html',
   styleUrls: ['./favie.component.css']
 })
+
 export class FavieComponent implements OnInit {
 public pokemon$: Observable<Pokemon[]>;
 public pokemonDetails$: Observable<PokemonDetails[]>;
