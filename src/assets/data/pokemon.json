@@ -14,6 +14,16 @@
       "name": "butterfree",
       "url": "https://pokeapi.co/api/v2/pokemon/12/",
       "id": 3
+    },
+    {
+      "name": "kakuna",
+      "url": "https://pokeapi.co/api/v2/pokemon/14/",
+      "id": 4
+    },
+    {
+      "name": "charmeleon",
+      "url": "https://pokeapi.co/api/v2/pokemon/5/",
+      "id": 5
     }
   ]
 }
