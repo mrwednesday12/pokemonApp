@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pokemon';
+  pokedex:boolean = true;
+
+  deleteImage(){
+    this.pokedex = false;
+  }
+
+  showImage(){
+    this.pokedex = true;
+  }
 }
