@@ -6,8 +6,13 @@
       "id": 1
     },
     {
-      "name": "blastoise",
-      "url": "https://pokeapi.co/api/v2/pokemon/9/",
+      "name": "venusaur",
+      "url": "https://pokeapi.co/api/v2/pokemon/3/",
+      "id": 2
+    },
+    {
+      "name": "nidorino",
+      "url": "https://pokeapi.co/api/v2/pokemon/33/",
       "id": 3
     }
   ]

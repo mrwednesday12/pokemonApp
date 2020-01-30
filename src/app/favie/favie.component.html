@@ -3,13 +3,19 @@
     <div class="row">
         <div class="col-md">
             <ul class="list-group">
-                <li class="pokemon list-group-item" (click)="getDetails(pokemon.url);" *ngFor="let pokemon of pokemon$ | async">
-                    {{pokemon.id}} {{pokemon.name}} <button (click) = "deletePokemon(pokemon.id)">Delete</button>
+                <li class="pokemon list-group-item cell" (click)="getDetails(pokemon.url);" *ngFor="let pokemon of pokemon$ | async">
+                     {{pokemon.id}} {{pokemon.name}} <button  class="btn btn-warning" (click) = "deletePokemon(pokemon.id)">Delete</button>
                 </li>
                 
                 <ul>
                     
-                    {{pokedetails.name}}
+                   extra information
+                   <li *ngIf="(pokemonDetails$ | async) as pokedetails">
+                    
+                    <img src="{{pokedetails.sprites.front_default}}" alt="">
+                   
+               
+                </li>
 
                     <li *ngIf="(pokemonDetails$ | async) as pokedetails">
                         type: {{pokedetails.types[0].type.name}}
@@ -26,6 +32,10 @@
                         height: {{pokedetails.height}}
                    
                     </li>
+
+                   
+
+                   
                
 
             </ul>

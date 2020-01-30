@@ -3,4 +3,7 @@ body{
     background-color: #393939;
     color: #3466AF;
 }
+.cell{
+     cursor: cell;
+     }
 @import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
