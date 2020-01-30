@@ -11,24 +11,20 @@
                     extra information
 
                     <li *ngIf="(pokemonDetails$ | async) as pokedetails">
-                    
-                        type:{{pokedetails.types[0].type.name}}
-                       
+                        type: {{pokedetails.types[0].type.name}}
                         
                     </li>
                     
-                <li *ngIf="(pokemonDetails$ | async) as pokedetails">
+                    <li *ngIf="(pokemonDetails$ | async) as pokedetails">
                     
-                    weight:{{pokedetails.weight}}
+                        weight: {{pokedetails.weight}}
                    
+                    </li>
+                    <li *ngIf="(pokemonDetails$ | async) as pokedetails">
                     
-                </li>
-                <li *ngIf="(pokemonDetails$ | async) as pokedetails">
-                    
-                    height:{{pokedetails.height}}
+                        height: {{pokedetails.height}}
                    
-                    
-                </li>
+                    </li>
                
 
             </ul>
