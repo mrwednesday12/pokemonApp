@@ -20,6 +20,11 @@ public getDetails(url:string){
   
 }
 
+deletePokemon(value) {
+  this.pokemonService.deleteFavie(value);
+}
+
+
 
   constructor(private pokemonService : PokemonService) {
    }
@@ -30,4 +35,5 @@ public getDetails(url:string){
    // check // this.pokemon$.subscribe(res => {console.log(res)});
   }
 
+  
 }

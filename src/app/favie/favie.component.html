@@ -4,7 +4,7 @@
         <div class="col-md">
             <ul class="list-group">
                 <li class="pokemon list-group-item" (click)="getDetails(pokemon.url);" *ngFor="let pokemon of pokemon$ | async">
-                    {{pokemon.id}} {{pokemon.name}}
+                    {{pokemon.id}} {{pokemon.name}} <button (click) = "deletePokemon(pokemon.id)">Delete</button>
                 </li>
                 
                 <ul>

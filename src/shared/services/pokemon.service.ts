@@ -39,4 +39,10 @@ export class PokemonService {
       
       .get<any[]>(url).pipe();
   }
+
+  deleteFavie(value) {
+    return this.http
+    .delete(this.urllocal+`/${value}`)
+    .​subscribe()
+  }
 }
