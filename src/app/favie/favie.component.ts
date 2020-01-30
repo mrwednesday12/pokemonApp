@@ -19,15 +19,13 @@ public getDetails(url:string){
   this.pokemonDetails$ = this.pokemonService.getDetails(url);
 }
 
-<<<<<<< Updated upstream
 deletePokemon(value) {
   this.pokemonService.deleteFavie(value);
 }
 
 
 
-=======
->>>>>>> Stashed changes
+
   constructor(private pokemonService : PokemonService) {
    }
   ngOnInit() {

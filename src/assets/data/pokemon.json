@@ -6,11 +6,6 @@
       "id": 1
     },
     {
-      "name": "squirtle",
-      "url": "https://pokeapi.co/api/v2/pokemon/7/",
-      "id": 2
-    },
-    {
       "name": "blastoise",
       "url": "https://pokeapi.co/api/v2/pokemon/9/",
       "id": 3
