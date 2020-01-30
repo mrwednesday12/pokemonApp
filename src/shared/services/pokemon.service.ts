@@ -33,8 +33,10 @@ export class PokemonService {
     return this.http.post(this.urllocal, value, { headers: headers });
   }
 
-  getDetails(url): Observable<PokemonDetails[]> {
+  getDetails(url): Observable<any[]> {
+    console.log(url);
     return this.http
-      .get<PokemonDetails[]>(url);
+      
+      .get<any[]>(url).pipe();
   }
 }

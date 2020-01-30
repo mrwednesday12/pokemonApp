@@ -17,6 +17,7 @@ public pokemonDetails$: Observable<PokemonDetails[]>;
 
 public getDetails(url:string){
   this.pokemonDetails$ = this.pokemonService.getDetails(url);
+  
 }
 
 

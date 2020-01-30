@@ -24,6 +24,16 @@
       "name": "charmeleon",
       "url": "https://pokeapi.co/api/v2/pokemon/5/",
       "id": 5
+    },
+    {
+      "name": "charmeleon",
+      "url": "https://pokeapi.co/api/v2/pokemon/5/",
+      "id": 6
+    },
+    {
+      "name": "venusaur",
+      "url": "https://pokeapi.co/api/v2/pokemon/3/",
+      "id": 7
     }
   ]
 }
