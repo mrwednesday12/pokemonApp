@@ -11,6 +11,7 @@ import { PokemonDetails } from '../model/pokemonDetails';
 export class PokemonService {
   urllocal = "http://localhost:3000/faviePokemon";
   url = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=200";
+  Pokemon: Object;
   constructor(private http: HttpClient) { }
 
   getPokemon(): Observable<Pokemon[]> {
@@ -43,6 +44,6 @@ export class PokemonService {
   deleteFavie(value) {
     return this.http
     .delete(this.urllocal+`/${value}`)
-    .​subscribe()
+    .​subscribe(Pokemon => this.Pokemon = Pokemon)
   }
 }
